@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Reddit Sentiment App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Reddit Sentiment App</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+  <!-- 🔵 Info Icon -->
+<div class="info-icon" title="">
+  <img src="https://cdn-icons-png.flaticon.com/512/471/471664.png" alt="info" />
+  <div class="tooltip-box">
+    <h4>How to Use</h4>
+    <p>
+      1️⃣ Enter a keyword or subreddit name.<br>
+      2️⃣ Click <b>Analyze</b> to start sentiment analysis.<br>
+      3️⃣ Wait a few seconds to view results.<br>
+      4️⃣ You can download the analysis report in PDF format.
+    </p>
+  </div>
+</div>
+
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="card">
+        <h2>Keyword Analysis</h2>
+        <input type="text" id="keyword" placeholder="Enter keyword (e.g. Amazon)">
+        <button onclick="analyzeKeyword()">Analyze</button>
+      </div>
+      <!-- Loading Overlay -->
+      <div id="loadingOverlay">
+          <div class="loader"></div>
+          <p>Analyzing...</p>
+      </div>
+            <!-- 🔵 Loading Overlay -->
+      <div id="loadingOverlay">
+        <div class="loader-container">
+          <div class="glow-circle"></div>
+          <h2 class="loading-text">Analyzing<span class="dots"></span></h2>
+       </div>
+      </div>
+
+
+      <div class="card">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+        <!-- <button onclick="downloadPDF()">Download Report (PDF)</button> -->
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="card">
+  <h2>Sentiment Visualization</h2>
+  <div class="chart-container">
+    <canvas id="sentimentChart"></canvas>
+  </div>
+</div>
+
+  </div>
+
+  <script src="dashboard.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

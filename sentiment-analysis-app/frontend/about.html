@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Reddit Sentiment App</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0f1c, #1a2238);
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 120px auto;
+      background: rgba(20, 25, 40, 0.9);
+      border-radius: 20px;
+      padding: 60px 80px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+      border: 1px solid rgba(0, 191, 255, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #00bfff;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #00eaff;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #d1d1d1;
+      margin: 15px 0;
+    }
+
+    strong {
+      color: #00eaff;
+    }
+
+    .credit {
+      margin-top: 25px;
+      font-size: 1.2em;
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .navbar h1 {
+      color: #00bfff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .navbar ul li a:hover {
+      color: #00eaff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Reddit Sentiment App</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html" style="color:#00eaff;">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      This project analyzes Reddit comments to determine whether they are
+      <strong>positive</strong>, <strong>negative</strong>, or <strong>neutral</strong>.
+      The results are visualized in beautiful, easy-to-understand charts so you can quickly
+      grasp public sentiment.
+    </p>
+    <p>
+      Developed as a <strong>Capstone Project</strong> with creativity and precision.
+    </p>
+    <p class="credit">Created by <strong>Sneha R</strong> for the Capstone Project.</p>
+  </div>
+</body>
+</html>

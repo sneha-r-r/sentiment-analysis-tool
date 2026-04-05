@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Reddit Sentiment App</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0f1c, #1a2238);
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 120px auto;
+      background: rgba(20, 25, 40, 0.9);
+      border-radius: 20px;
+      padding: 50px 60px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+      border: 1px solid rgba(0, 191, 255, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: #00bfff;
+      font-size: 2.6em;
+      text-shadow: 0 0 15px #00eaff;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 12px;
+      border: 1px solid #00bfff;
+      background-color: rgba(15, 20, 35, 0.8);
+      color: #e0e0e0;
+      font-size: 1em;
+      outline: none;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00eaff;
+      box-shadow: 0 0 10px #00eaff;
+    }
+
+    button {
+      background-color: #00bfff;
+      color: #0a0f1c;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s ease;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #00bfff;
+    }
+
+    button:hover {
+      background-color: #00eaff;
+      box-shadow: 0 0 20px #00eaff;
+      transform: scale(1.05);
+    }
+
+    .navbar h1 {
+      color: #00bfff;
+      text-shadow: 0 0 10px #00eaff;
+    }
+
+    .navbar ul li a:hover {
+      color: #00eaff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Reddit Sentiment App</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" style="color:#00eaff;">Contact Us</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="5" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
